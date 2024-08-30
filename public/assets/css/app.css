@@ -6,6 +6,11 @@
 :root {
     --greyCustom: #B6BBC4;
     --creamCustom: #F9F9F9;
+    --whiteCustom: #FFFFFF;
+}
+
+body {
+    background-color: var(--creamCustom);
 }
 
 html,
@@ -96,7 +101,6 @@ video {
     font: inherit;
     font-family: SUSE, sans-serif;
     vertical-align: baseline;
-    background-color: var(--creamCustom);
     color: #161A30;
 }
 
@@ -187,3 +191,93 @@ a:hover {
 }
 
 /* End of Nav */
+
+/* Main */
+main {
+    width: 75%;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+main h1 {
+    border: 1px solid var(--greyCustom);
+    background-color: var(--whiteCustom);
+    border-radius: 15px;
+    box-shadow: rgb(22, 26, 48, 0.3) 0px 1px 2px;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+main .table-container {
+    border: 1px solid var(--greyCustom);
+    background-color: var(--whiteCustom);
+    border-radius: 15px;
+    box-shadow: rgb(22, 26, 48, 0.3) 0px 1px 2px;
+    padding: 20px 10px;
+}
+
+main .table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px;
+    margin-bottom: 20px;
+    background-color: var(--whiteCustom);
+}
+
+main .table-header h2 {
+    background-color: var(--whiteCustom);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+main .table-header button {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--whiteCustom);
+    border: 1px solid var(--greyCustom);
+    border-radius: 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+main .table-header button:hover {
+    background-color: #eff1f4;
+}
+
+main .table-header img {
+    cursor: pointer;
+    width: 20px;
+    background-color: transparent;
+}
+
+table {
+    border: 1px solid var(--greyCustom);
+    width: 100%;
+}
+
+table td:nth-child(1),
+table td:nth-child(3) {
+    text-align: center;
+}
+
+table td,
+table th {
+    border: 2px solid black;
+    padding: 10px 20px;
+    background-color: var(--whiteCustom);
+}
+
+table tr th {
+    background-color: var(--greyCustom);
+    font-size: 22px;
+}
+
+
+/* End of Main */

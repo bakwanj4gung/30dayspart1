@@ -30,7 +30,7 @@
             </nav>
         </header>
         <main>
-            
+            @yield('home')
         </main>
     </body>
 </html>
